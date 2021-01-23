@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+
+*{
+    margin: 0;
+}
+:root {
+    --primary-color: #222021;
+    --off-white: #F3F4F6;
+    --bgColorOne: #808588;
+}
+
+body{
+    font-family: 'Oswald', sans-serif;
+
+}
+section{
+    padding: 2rem;
+
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+small{
+    text-align: center;
+    font-weight: bolder;
+    font-size: inherit;
+}
+.container{
+    padding:0rem 0.5rem;
+}
+.container-center{
+    max-width: 600px;
+    margin: auto;
+}
+.fluid-container{
+    width: 100%;
+    background-color: var(--bgColorOne);
+    text-align: center;
+    font-family: 'Open Sans Condensed', sans-serif;
+
+}
+
+.list-non-bullet {
+    list-style: none;
+}
+
+.list-item-inline {
+    display: inline;
+    padding: 0rem 1rem;
+}
+.hero-section{
+    /* background-color: aqua; */
+    background-image: url("/images/jen-1.jpg");
+    background-size: cover;
+    height:500px;
+}
+header{
+    padding-top: 2rem;
+    /* background-color: red; */
+    max-height: 300px;
+    text-align: center;
+}
+header h1{
+    font-family: 'Great Vibes', cursive;
+    font-size: 40px;
+    text-shadow: 2px 2px 2px var(--bgColorOne);
+
+}
+nav{
+    padding-top: 2rem;
+    color:var(--primary-color);
+    text-shadow: 2px 2px 2px var(--bgColorOne);
+    font-size: 20px;
+    font-weight: bolder;
+}
+.list-item-inline:hover{
+    color: var(--off-white);
+    background-color: var(--bgColorOne);
+    border-radius: 3px;
+
+}
+.about-btn{
+    margin: 8rem;
+    border: 1px black solid;
+    border-radius: 3px;
+    background: none;
+    padding: 0.5rem;
+}
+.about-btn:hover{
+    background-color: var(--bgColorOne);
+    color:var(--primary-color);
+}
+
+/* Photo Gallery */
+.photo-gallery{
+    display: flex;
+    padding: 2rem;
+}
+.photo-gallery .col-pic-1{
+    margin-right: 0.5rem;
+
+}
+.photo-gallery .row-pic-1{
+    margin-bottom: 0.5rem;
+}
+
+.photo-gallery .col-pic-2{
+    margin-left: 0.5rem;
+}
+/* Our Story and Blog */
+.blog-container{
+    font-family: 'Open Sans Condensed', sans-serif;
+    background-image: url("/images/blog-bg-1.jpg");
+    background-size: cover;
+    background-position:top;
+    height: 300px;
+}
+/* Contact */
+.form-container {
+    text-align: center;
+}
+.form-container input,textarea{
+    margin: 0.5rem;
+    padding: 0.3rem;
+    border: 1px black solid;
+    border-radius: 3px;
+}
+.form-container .send-btn{
+    width: 45%;
+    padding: 0.3rem;
+    background: none;
+    border: 1px black solid;
+    border-radius: 3px;
+   }
+.send-btn:hover{
+    background-color: var(--bgColorOne);
+}
+   /* Footer */
+   .footer-container{
+       display: flex;
+       justify-content: center;
+       flex-wrap: nowrap;
+       background-color: var(--bgColorOne);
+       border: 1px black solid;
+       padding: 2rem 2rem ;
+       text-align: center;
+
+
+   }
+
+   .footer-container .social{
+       padding: 1rem;
+       margin: 1rem;
+     }
+.social .sub-btn{
+    margin-top:0.5rem;
+    padding:0.2rem;
+    border: 1px black solid;
+    border-radius: 3px;
+    background: none;
+}
+.footer-container .footer-about{
+    padding:1rem;
+    margin: 1rem;
+    font-family: 'Open Sans Condensed', sans-serif;
+
+
+}
+
+.footer-container .footer-img{
+    /* padding:1rem;
+    margin: 0rem; */
+    width: 50%;
+
+}
+
+/* Media */
+@media screen and (max-width: 650px) {
+    .footer-container{
+        flex-wrap: wrap;
+    }
+     .form-container textarea {
+        width: 70%;
+    }
+    .form-container .send-btn{
+        width: 70%;
+    } 
+} 
+
+@media screen and (max-width:500px){
+    .photo-gallery{
+        flex-wrap: wrap;
+        margin: 0rem 4rem;
+    }
+    .photo-gallery .col-pic-2{
+        margin-top: 0.5rem;
+    }
+    .photo-gallery .col-pic-1{
+        margin-top: 0.5rem;
+    }
+    .photo-gallery .row-pic-2{
+        margin-top: 0.5rem;
+    }
+    .photo-gallery .row-pic-1{
+        margin-top: 0.5rem;
+    }
+    header h1{
+    color: var(--off-white);
+    text-shadow: 2px 2px 2px black;
+ }
+    /* .footer-container{
+        flex-wrap: wrap;
+    }*/
+    /* .form-container input,textarea {
+        width: 100%;
+    }
+    .form-container .send-btn{
+        width: 100%;
+    } */
+}
